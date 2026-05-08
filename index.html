@@ -332,7 +332,32 @@
 
 
     }
-    
+
+    .fade-up {
+
+  
+      opacity: 0;
+
+  
+      transform: translateY(60px);
+
+  
+      transition: all 1s ease;
+
+
+    }
+
+
+    .fade-up.show {
+
+  
+      opacity: 1;
+
+  
+      transform: translateY(0);
+
+
+    }
     
     td, th {
       height: 60px;
@@ -573,27 +598,29 @@
 </section>
 
 <section>
-  <h2>診療内容</h2>
+
+  <h2 class="fade-up">診療内容</h2>
 
   <div class="cards">
 
-    <div class="card">
+    <div class="card fade-up">
       <img src="1.JPG">
     </div>
 
-    <div class="card">
+    <div class="card fade-up">
       <img src="2.JPG">
     </div>
 
-    <div class="card">
+    <div class="card fade-up">
       <img src="3.JPG">
     </div>
 
-    <div class="card">
+    <div class="card fade-up">
       <img src="4.JPG">
     </div>
-    <div class="container">
+
   </div>
+
 </section>
 
 <h2>当院の特徴</h2>
@@ -625,7 +652,7 @@
 <script>
     
 
-  const targets = document.querySelectorAll('.fade-left, .fade-right');
+  const targets = document.querySelectorAll('.fade-left, .fade-right',.fade-up');
 
     
   window.addEventListener('scroll', () => {
