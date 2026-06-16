@@ -31,6 +31,44 @@
       height: auto;
       flex-shrink: 0;
     }
+    .sub-title{
+ 
+      display:block;
+ 
+      font-size:16px;
+ 
+      letter-spacing:4px;
+
+      margin-bottom:10px;
+ 
+      color:#6bbfb5;
+    }
+
+    .fixed-text h2{
+
+      font-family:"Cormorant Garamond", serif;
+ 
+      font-size:90px;
+  
+      line-height:0.9;
+ 
+      font-weight:500;
+ 
+      margin:0;
+
+    }
+
+
+    .fixed-text p{
+ 
+      margin-top:20px;
+  
+      font-size:18px;
+ 
+      letter-spacing:2px;
+
+    }
+    
     
     .slider {
       position: relative;
@@ -161,29 +199,20 @@
     color: white;
   }
     
-    .fixed-text {
-      position: absolute;
-      bottom: 20px;
-  
-      right: 20px;
-      
-      text-align: right;
-  
-      color: white;
-  
-      font-size: 18px;
-  
-      font-weight: bold;
-  
-      text-shadow: 0 2px 8px rgba(0,0,0,0.5);
-      
-      font-family: "MS Mincho", "ＭＳ 明朝", serif;
-      
-      border-radius: 8px;                 /* ←これ追加 */
+    .fixed-text{
  
-      border-radius: 8px; 
+      position:absolute;
+  
+      top:50%;
+  
+      left:8%;
+  
+      transform:translateY(-50%);
+  
+      z-index:10;
+  
+      color:#333;
 
-      display: inline-block;
     }
 
     .line {
@@ -418,10 +447,28 @@
   </style>
   <style>
     @media screen and (min-width: 500px) {
-      .fixed-text {
-        font-size: 28px;
-        line-height: 1.6;   /* 行間広げる */
+        .fixed-text{
+   
+          left:5%;
+ 
+        }
+
+  
+      .fixed-text h2{
+   
+        font-size:48px;
+ 
       }
+
+  
+      .fixed-text p{
+    
+        font-size:14px;
+ 
+      }
+
+
+    }
    
       .line2 {
     
@@ -534,19 +581,36 @@
     
   
     </div>
-    
-     <div class="fixed-text">  
 
+    <div class="fixed-text">
+      <span class="sub-title">
     
-       <span class="line line1">患者さま一人ひとりに寄り添い</span><br>
-    
-       <span class="line line2">安心してご来院いただける</span><br>
-    
-       <span class="line line3">医療の提供を心がけています</span>
+        KITAOJI DENTAL CLINIC
   
-     </div>
+      </span>
+
+  
+      <h2>
+    
+        Gentle<br>
+    
+        Dental Care
+  
+      </h2>
+
+  
+      <p>
+    
+        地域の皆さまのお口の健康を支える
+  
+      </p>
+
+
     </div>
+    
   </div>
+  
+</div>
 
   
 
