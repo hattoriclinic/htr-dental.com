@@ -320,6 +320,56 @@
     color: white;
   }
 
+  .header-inner{
+ 
+    display:flex;
+ 
+    justify-content:space-between;
+ 
+    align-items:center;
+
+  }
+
+
+    .logo-area{
+
+      display:flex;
+
+      align-items:center;
+
+    }
+
+    .header-call{
+  
+      background:#6dbeb5;
+ 
+      color:#fff;
+ 
+      text-decoration:none;
+
+ 
+      padding:10px 20px;
+
+ 
+      border-radius:30px;
+
+  
+      font-size:15px;
+  
+      font-weight:500;
+
+  
+      transition:0.3s;
+
+    }
+
+
+    .header-call:hover{
+ 
+      opacity:0.9;
+
+    }
+
     
     
 
@@ -576,6 +626,8 @@
  
       }
 
+      
+
 
     }
    
@@ -591,8 +643,13 @@
         margin-left: 100px;  /* ←広げる */
   
       }
+    
+    
+
+    　
 
     }
+    
   </style>
     
   <style>
@@ -658,6 +715,15 @@
  
     }
 
+      .header-call{
+   
+        font-size:12px;
+   
+        padding:8px 12px;
+ 
+      }
+    
+
     .char {
       width: 40px;
     }
@@ -718,14 +784,20 @@
 <header>
   <div class="container">
     <div class="header-inner">
-      <img src="character.png" class="char">
-      <div class="title">
-        <h1>服部歯科医院</h1>
-        <p>HATTORI DENTAL CLINIC</p>
+
+      <div class="logo-area">
+        <img src="character.png" class="char">
+
+        <div class="title">
+          <h1>歯科医院</h1>
+          <p>DENTAL CLINIC</p>
+        </div>
       </div>
 
-      
-      
+      <a href="tel:06-1234-5678" class="header-call">
+        📞 06-1234-5678
+      </a>
+
     </div>
   </div>
 </header>
